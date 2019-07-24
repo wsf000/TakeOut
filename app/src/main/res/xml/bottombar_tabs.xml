@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs >
+
+
+    <tab
+            id="@+id/tab_home"
+            icon="@mipmap/tab_home"
+            title="@string/home" />
+    <tab
+            id="@+id/tab_orders"
+            icon="@mipmap/tab_orders"
+            title="@string/orders" />
+    <tab
+            id="@+id/tab_my"
+            icon="@mipmap/tab_my"
+            title="@string/my" />
+    <tab
+            id="@+id/tab_more"
+            icon="@mipmap/tab_more"
+            title="@string/more" />
+
+</tabs>
