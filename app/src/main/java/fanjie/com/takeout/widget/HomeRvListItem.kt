@@ -21,6 +21,7 @@ class HomeRvListItem(context: Context?, attrs: AttributeSet? = null) : RelativeL
 
     fun bindview(s: String) {
 
+
     }
 
 }
