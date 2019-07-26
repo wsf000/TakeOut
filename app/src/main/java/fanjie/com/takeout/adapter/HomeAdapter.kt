@@ -4,6 +4,7 @@ import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import fanjie.com.takeout.model.Seller
 import fanjie.com.takeout.widget.HomeRvListItem
 import fanjie.com.takeout.widget.HomeTitleItem
 
@@ -13,7 +14,7 @@ import fanjie.com.takeout.widget.HomeTitleItem
  * Date: 2019/7/24 13:50
  * Notes: 首页适配器
  */
-class HomeAdapter(val context: Context, val mDatas: List<String>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class HomeAdapter(val context: Context, val mDatas: MutableList<Seller>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
 
     companion object {
@@ -40,7 +41,6 @@ class HomeAdapter(val context: Context, val mDatas: List<String>) : RecyclerView
     }
 
     override fun getItemCount(): Int {
-
         if (mDatas.size > 0){
             return mDatas.size +1
         } else{
@@ -61,6 +61,9 @@ class HomeAdapter(val context: Context, val mDatas: List<String>) : RecyclerView
             TYPE_HOME_RV -> {
                 val item = holder.itemView as HomeRvListItem
                 item.bindview(mDatas[position - 1])
+                item.setOnClickListener {
+
+                }
             }
         }
 

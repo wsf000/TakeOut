@@ -11,6 +11,7 @@ import android.content.Context
 object AllUtils {
 
 
+
     //获取是否存在NavigationBar
    fun checkDeviceHasNavigationBar(context: Context): Boolean {
         var hasNavigationBar = false
@@ -39,8 +40,8 @@ object AllUtils {
     /**
      * 把转化功能添加到Int类中作为扩展函数
      */
-    fun dip2px(context: Context, dpValue: Float): Int {
-        val scale = context.resources.displayMetrics.density
+    fun dip2px(context: Context?, dpValue: Float): Int {
+        val scale = context!!.resources.displayMetrics.density
         return (dpValue * scale + 0.5f).toInt()
     }
 
