@@ -1,8 +1,7 @@
-package com.heima.takeout.presenter
+package fanjie.com.takeout.net
+
 
 import android.util.Log
-import com.heima.takeout.model.net.TakeoutService
-import fanjie.com.takeout.net.ResponseInfo
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

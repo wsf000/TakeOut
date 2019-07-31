@@ -15,7 +15,7 @@ object AllUtils {
     //获取是否存在NavigationBar
    fun checkDeviceHasNavigationBar(context: Context): Boolean {
         var hasNavigationBar = false
-        val rs = context.getResources()
+        val rs = context.resources
         val id = rs.getIdentifier("config_showNavigationBar", "bool", "android")
         if (id > 0) {
             hasNavigationBar = rs.getBoolean(id)

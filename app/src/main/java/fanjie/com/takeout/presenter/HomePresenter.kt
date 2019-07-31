@@ -2,9 +2,9 @@ package fanjie.com.takeout.presenter
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.heima.takeout.presenter.NetPresenter
 import fanjie.com.takeout.contract.HomeContract
 import fanjie.com.takeout.model.Seller
+import fanjie.com.takeout.net.NetPresenter
 import org.json.JSONObject
 
 /**

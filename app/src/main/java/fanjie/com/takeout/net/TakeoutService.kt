@@ -1,6 +1,5 @@
-package com.heima.takeout.model.net
+package fanjie.com.takeout.net
 
-import fanjie.com.takeout.net.ResponseInfo
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
